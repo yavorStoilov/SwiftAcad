@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Frontend Weekly</title>
+  <link href="https://fonts.googleapis.com/css?family=Bevan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/external.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo, nav {
+      border: 1px solid black;
+      width: 50%;
+      display: inline-block;
+    }
+
+    nav {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="content-wrap">
+      <h3 class="logo">
+        <a href="">
+          the web gazette
+        </a>
+      </h3><!--
+      --><nav>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+        <a href="">Animation</a>
+      </nav>
+      <h2>Web performance</h2>
+    </div>
+  </header>
+  <section>
+    <h1 class="content-wrap">
+      Font Loading is Hard
+    </h1>
+  </section>
+
+  <main>
+    <div class="content-wrap">
+      <section id="description">
+        <p>
+          A fast page load is hard to come by and hard to profile.
+        </p>
+        <p>One of the subtle and silent perf killers</p>
+        <p>
+          is none of other than Web Fonts.
+        </p>
+      </section>
+      <section class="main-content">
+        <p>
+          On May 12. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nunc elementum felis vel vulputate interdum. In hac habitasse platea
+          dictumst.
+          <span class="italic">
+            Etiam vestibulum odio nec augue lobortis ultricies.
+          </span>
+          Curabitur interdum nisl non tellus posuere pulvinar.
+        </p>
+        <p>
+          Maecenas dapibus, tellus et finibus pretium, mi erat imperdiet
+          magna, a dignissim augue sapien eu est.
+          <strong>Vivamus dictum augue quis elit tempus</strong>, ac accumsan
+          libero luctus. In mattis auctor neque eget eleifend.
+        </p>
+        <h3>section title</h3>
+        <p>
+          Donec hendrerit suscipit lacus, eget maximus arcu convallis
+          porttitor. Donec et eleifend felis.
+          <span class="italic">
+            Integer mattis gravida semper. Donec eget sollicitudin nisl.
+          </span>
+          Donec aliquam fermentum dui et tempus. Integer consectetur
+          consectetur faucibus.
+        </p>
+        <p>
+          Aenean placerat sodales nisl sed fermentum. Class aptent taciti
+          sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos.
+          <strong>Nunc eu turpis sapien.</strong>Praesent non lectus mollis,
+          tempus arcu sed, finibus nulla. Nullam malesuada nec sapien eu
+          elementum.
+        </p>
+        <p>
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+          per inceptos himenaeos. Vivamus nec consequat elit, eu rutrum justo.
+          Nunc laoreet lacus id rutrum viverra. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada fames ac turpis egestas.
+          <span class="italic">
+            Integer in nunc eu tellus vehicula fringilla.
+          </span>
+          Donec id risus aliquet, eleifend quam eget, eleifend ex. Sed mi
+          dolor, finibus vestibulum fringilla non, bibendum facilisis eros.
+          Maecenas congue porttitor nunc, vitae molestie justo aliquet sed.
+          Donec tristique commodo consectetur. Nunc condimentum congue mi eget
+          blandit.
+        </p>
+        <p>
+          Donec hendrerit suscipit lacus, eget maximus arcu convallis
+          porttitor. Donec et eleifend felis.
+          <strong>Integer mattis</strong> gravida semper. Donec eget
+          sollicitudin nisl. Donec aliquam fermentum dui et tempus. Integer
+          consectetur consectetur faucibus.
+        </p>
+        <p>
+          On May 12. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nunc elementum felis vel vulputate interdum. In hac habitasse platea
+          dictumst. Etiam vestibulum odio nec augue lobortis ultricies.
+          <strong>Curabitur interdum nisl non tellus posuere pulvinar.</strong>
+          Maecenas dapibus, tellus et finibus pretium, mi erat imperdiet
+          magna, a dignissim augue sapien eu est. Vivamus dictum augue quis
+          elit tempus, ac accumsan libero luctus. In mattis auctor neque eget
+          eleifend. Mauris a ipsum molestie, ultrices ante et, lacinia sem.
+          Sed scelerisque dui eu neque consequat ullamcorper. Pellentesque
+          lacus sem, gravida in dolor sit amet, ultrices ultrices elit.
+          Praesent ultricies diam eu eleifend egestas.
+          <span class="italic">
+            Donec mauris arcu, cursus ac lacus vitae, interdum vulputate
+            ipsum.
+          </span>
+          Phasellus vel purus scelerisque, fringilla urna quis, rhoncus
+          lectus. Nulla facilisi. Proin quis sollicitudin erat. Vivamus
+          suscipit dignissim malesuada. Lorem ac. Donec hendrerit suscipit
+          lacus, eget maximus arcu convallis porttitor. Donec et eleifend
+          felis. Integer mattis gravida semper. Donec eget sollicitudin nisl.
+          Donec aliquam fermentum dui et tempus. Integer consectetur
+          consectetur faucibus.
+        </p>
+        <h3>Section Title</h3>
+        <p>
+          Sed accumsan turpis eu finibus pellentesque. Etiam convallis justo
+          et arcu faucibus, vel scelerisque velit finibus. Fusce sed elit ut
+          eros euismod facilisis. Aenean euismod neque non rhoncus consequat.
+          <span class="italic">Nam placerat hendrerit ligula sed hendrerit .</span>
+          Suspendisse ac tincidunt justo. Suspendisse sodales egestas
+          consequat. Praesent venenatis magna ac tortor dignissim dictum.
+        </p>
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Donec eu ex id est auctor tempus. Phasellus
+          sapien nisl, pharetra a eros ac, maximus hendrerit massa. Orci
+          varius natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus.
+          <strong>Phasellus tortor neque, dictum at varius nec, consectetur non
+            metus.</strong>
+          Aliquam erat volutpat.
+          <span class="italic">Aenean consequat nisl mauris,</span> sed rutrum
+          urna fringilla eget. Proin blandit, sapien ac sagittis interdum,
+          tortor velit sollicitudin eros, ut suscipit risus est at velit.
+          Mauris a ligula viverra, hendrerit sem quis, congue purus. Aliquam
+          suscipit elit a justo sodales, id gravida erat porta.
+        </p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="content-wrap">
+      <h3>The Web Gazette</h3>
+    </div>
+  </footer>
+</body>
+
+</html>

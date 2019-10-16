@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #363333;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: "Bevan", sans-serif;
+    font-size: 72px;
+    font-weight: normal;
+}
+
+/*Header starts */
+/* 
+.logo {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 22px;
+} */
+
+a {
+    color: #363333;
+    text-decoration: none
+}
+
+h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: normal
+}
+nav {
+    font-family: EB Garamond, serif;
+    font-size: 16px;
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+#description {
+    
+}
+
+#description p {
+    background-color: #363333;
+    color: white;
+    margin-bottom: 10px;
+}

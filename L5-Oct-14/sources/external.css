@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+    font-family: Bevan;
+  font-size: 72px;
+  color: white;
+}
+h2 {
+}
+h3 {
+  font-size: 22px;
+  color: #36332a;
+  font-weight: normal;
+}
+h4 {
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header a {
+  color: #36332a;
+  font-family: "Cinzel Decorative";
+}
+
+.italic {
+    font-style: italic;
+}
+
+.content-wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#description {
+    font-size: 32px;
+    font-family: "Fjalla One";
+    color: white;
+    background-color: #36332a;
+}
+
+#description p {
+    margin-bottom: 10px;
+    
+}
+
+.main-content {
+    column-count: 2;
+}
+
+.main-content p  {
+    margin-bottom: 16px;
+    font-family: "EB Garamond";
+    line-height: 30px;
+    font-size: 20px;
+    padding: 8px;
+}

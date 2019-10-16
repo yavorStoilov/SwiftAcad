@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lection 6 Box Model</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* div {
+            background-color: navy;
+            width: 50%;
+            height: 50%;
+            max-width: 250px;
+            min-width: 150px;
+            padding: 10px;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 20px 30px 50px;
+
+            padding: 10px 20px;
+
+            padding: 10px 20px 30px;
+
+            border-width: 5px 10px 15px;
+            border-color: lightblue lightgoldenrodyellow ;
+            border-style: solid;
+            border-radius: 10px;
+        } */
+
+        header {
+            border: 1px solid black;
+           
+        }
+
+        .logo {
+            border: 1px solid green;
+            width: 50%;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        nav {
+            border: 1px solid orange;
+            width:50%;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        /*three elements example*/
+        .container {
+            border: 1px solid green;
+        }
+
+        span {
+            display: inline-block;
+            width: 33.33%;
+            height: 25px;
+            
+            background-color: orange;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <div class="logo">
+            Logo
+        </div>
+    <nav>
+            <a href="">L1 </a>
+            <a href="">L2</a>
+            <a href="">L3</a>
+        </nav>
+    </header> -->
+    <div class="container">
+        <span>span</span><span>span</span><span>span</span>
+    </div>
+</body>
+</html>

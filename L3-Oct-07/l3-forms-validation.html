@@ -1,0 +1,196 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN“ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Текст</legend>
+            <!-- Обикновен текстов input -->
+            <p>
+                <label for="examplePlaceholder">
+                    <span>Текст</span>
+                    <input type="text" name="" id="examplePlaceholder" placeholder="Име">
+                </label>
+            </p>
+            <!-- пример за максимална и минимална дължина -->
+            <p>
+                <label for="textarea">
+                    <span>Текстово поле с максимална дължина</span>
+                    <textarea name="" id="" cols="20" rows="5" maxlength="10"></textarea>
+                </label>
+            </p>
+            <!-- Пример за input от тип парола -->
+            <p>
+                <label for="examplePass">
+                    <span>Парола</span>
+                    <input type="password" name="" id="examplePass" placeholder="Парола">
+                </label>
+            </p>
+            <!-- Неактивен disabled input, променен е визуално и не може да бъде манипулиран от юзера -->
+            <p>
+                <label for="exampleDisabled">
+                    <span>Текст disabled</span>
+                    <input type="text" name="" id="exampleDisabled" placeholder="Пример" disabled>
+                </label>
+            </p>
+            <!-- input който, не е визуално променен, но не може да бъде манипулиран -->
+            <p>
+                <label for="exampleReadonly">
+                    <span>Текст read only</span>
+                    <input type="text" name="" id="exampleReadonly" placeholder="Пример" readonly>
+                </label>
+            </p>
+            <!-- input тим имейл -->
+            <p>
+                <label for="exampleMail">
+                    <span>Email</span>
+                    <input type="email" name="" id="exampleMail" placeholder="example@example.com">
+                </label>
+            </p>
+            <!-- input тим website -->
+            <p>
+                <label for="exampleWeb">
+                    <span>Website</span>
+                    <input type="url" pattern="https?://.+" name="" id="exampleWeb" placeholder="example@example.com">
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Required</legend>
+            <!-- такъв input е задължително да бъде попълнен от юзера -->
+            <p>
+                <label for="exampleRequired">
+                    <span>Required*</span>
+                    <!--AUTOFOCUS -->
+                    <!-- <input type="text" name="" id="exampleReadonly" required autofocus> -->
+                    <input type="text" name="" id="exampleReadonly" required>
+                </label>
+            </p>
+            <p>
+                <label for="exampleRequiredValue">
+                    <span>Required* with default value</span>
+                    <input type="text" name="" id="exampleRequiredValue" required value="Имам текст">
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Номера : )</legend>
+            <p>
+                <label for="exampleNum">
+                    <span>Номер/Число</span>
+                    <input type="number" name="" id="exampleNum">
+                </label>
+            </p>
+            <p>
+                <label for="exampleNum">
+                    <span>Required Номер/Число</span>
+                    <input type="number" name="" id="exampleNum" required>
+                </label>
+            </p>
+            <p>
+                <label for="exampleNumMm">
+                    <span> Номер/Число между 5 и 10</span>
+                    <input type="number" name="" id="exampleNumMm" min="5" max="10">
+                </label>
+            </p>
+            <p>
+                <label for="exampleNumMm">
+                    <span> Номер/Число между -500 и 1000</span>
+                    <input type="number" name="" id="exampleNumMm" min="-500" max="1000" step="100">
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Селекции</legend>
+            <div>
+                <p>Радио бутони</p>
+                <label for="op1">
+                    <input type="radio" name="gender" value="Опция1" id="op1" checked>
+                    <span>Опция 1</span>
+                </label>
+                <label for="op2">
+                    <input type="radio" name="gender" value="Опция2" id="op2">
+                    <span>Опция 2</span>
+                </label>
+                <label for="op3">
+                    <input type="radio" name="gender" value="Опция3" id="op3">
+                    <span>Опция 3</span>
+                </label>
+            </div>
+            <div>
+                <p>Чекбокс бутони</p>
+                <label for="chk1">
+                    <input type="checkbox" name="" id="chk1">
+                    <span>Опция 1</span>
+                </label>
+                <label for="chk2">
+                    <input type="checkbox" name="" id="chk2">
+                    <span>Опция 2</span>
+                </label>
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Дати/Време</legend>
+            <p>
+                <label for="exampleDate">
+                    <span>Дата</span>
+                    <input type="date" name="" id="exampleDate">
+                </label>
+            </p>
+            <p>
+                <label for="exampleDateTime">
+                    <span>Час</span>
+                    <input type="time" name="" id="exampleDateTime">
+                </label>
+            </p>
+            <p>
+                <label for="exampleDtl">
+                    <span>Дата/Час</span>
+                    <input type="datetime-local" name="" id="exampleDtl">
+                </label>
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Други</legend>
+            <p>
+                    <label for="examplePattern">
+                        <span>Pattern</span>
+                        <input type="number" required placeholder="123-123-1234" name="" pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" id="examplePattern">
+                    </label>
+                </p>
+            <p>
+            <p>
+                    <label for="еxampleHidden">
+                        <span>: )</span>
+                        <input type="text" name="" id="еxampleHidden" hidden>
+                    </label>
+                </p>
+            <p>
+                <label for="">
+                    <span>Range</span>
+                    <input type="range" min="0" max="100" step="5" value="50" list="marks">
+                </label>
+            </p>
+            <p>
+                <label for="exampleColor">
+                    <span>Цвят</span>
+                    <input type="color" name="" id="exampleColor">
+                </label>
+            </p>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

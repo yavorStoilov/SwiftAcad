@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    position: relative;
+    margin: 50px auto;
+    height: 200px;
+    width: 400px;
+    /* box-sizing: border-box; */
+}
+
+.hidden {
+    display: none;
+}
+
+/*height & width*/
+
+.example-height-width {
+    height: 80%;
+    width: 80%;
+    background-color: royalblue;
+    font-size: 50px;
+
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 1200px;
+    max-height: 1200px;
+}
+
+/*border*/
+
+.example-border {
+    background: lightblue;
+    border: 10px dashed royalblue;
+
+    /* border-style: dotted;
+    border-width: 5px 10px 15px 20px;
+    border-color: red green brown blue */
+
+    /* border-top: 5px solid green;
+    border-right: 2px dotted brown;
+    border-bottom: 12px dashed yellow;
+    border-left: 18px double purple;  */
+}
+
+/*padding*/
+
+.example-padding {
+    background-color: lightblue;
+    border: 3px dashed darkblue;
+
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+
+    padding: 40px 20px;
+
+    /* padding: 40px; */
+}
+
+/*margin*/
+
+.example-margin {
+    background-color: lightblue;
+    border: 3px dashed darkblue;
+
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+
+    margin: 40px auto;
+
+    /* margin: 40px; */
+}
+
+/*border and content box*/
+
+.example-box {
+    height: 160px;
+    width: 160px;
+    border: 2px solid lightblue;
+}
+
+.example-box.border-box {
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+.example-box.content-box {
+    padding: 20px;
+    margin: 30px;
+    box-sizing: content-box;
+}
