@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector Combinations</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: #333;
+        }
+
+        a {
+            display: block;
+            color: gray
+        }
+
+        /*X Y X Y Z*/
+
+        /* ul li ul li p {
+            color: brown
+        } */
+
+        /*X + Y*/
+
+        /* p + p {
+             color: green;
+         } */
+
+        /*X ~ Y */
+
+        /* p~a {
+            color: yellowgreen;
+            text-decoration: none;
+        } */
+
+        /*X > Y*/
+
+        /* li>a {
+            color: red
+        } */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Лист първо ниво
+            <ul>
+                <li>Лист второ ниво
+                </li>
+                <li>Лист второ ниво
+                    <a href="">Линк на лист от второ ниво</a>
+                    <p>Параграф на лист от второ ниво</p>
+                    <p>Параграф на лист от второ ниво</p>
+                    <p>Параграф на лист от второ ниво</p>
+                    <a href="">Линк на лист от второ ниво</a>
+                    <a href="">Линк на лист от второ ниво</a>
+                    <a href="">Линк на лист от второ ниво</a>
+                </li>
+                <li>Лист второ ниво
+                    <p>Параграф на лист от второ ниво'
+                        <a href="">Линк в параграф</a>
+                    </p>
+                </li>
+            </ul>
+        </li>
+        <li>Лист първо ниво
+            <p>Параграф на лист от първо ниво</p>
+            <p>Параграф на лист от първо ниво</p>
+        </li>
+        <li>Лист първо ниво
+            <p>Параграф на лист от първо ниво</p>
+            <a href="">Линк на лист от първо ниво</a>
+        </li>
+        <li>Лист първо ниво
+            <a href="">Линк на лист от първо ниво</a>
+        </li>
+        <li>Лист първо ниво
+            <p>Параграф на лист от първо ниво
+                <a href="">Линк в параграф</a>
+
+            </p>
+        </li>
+    </ul>
+</body>
+
+</html>

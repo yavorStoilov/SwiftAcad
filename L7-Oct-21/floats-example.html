@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .float-left {
+            float: left;
+            border: 1px solid green;
+            background-color: rgba(0, 128, 0, 0.432);
+            height: 200px;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        .float-right {
+            float: right;
+            border: 1px solid brown;
+            background-color:rgba(165, 42, 42, 0.411);
+            height: 300px;
+            width: 200px;
+            margin-left: 10px;
+        }
+
+        .text {
+            border: 1px solid blue;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="content">
+        <div class="text clearfix">
+            <div class="float-left"><strong>float: left;</strong></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet neque aliquam, rutrum neque nec, pellentesque
+                nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque
+                vitae dignissim erat. Suspendisse sodales ultricies sapien, a pretium libero rhoncus ut. Integer tincidunt
+                suscipit venenatis. Donec nulla tellus, malesuada ut pharetra mattis, sodales vehicula leo. Aenean lacus
+                lorem, aliquam nec cursus et, lobortis et leo. Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames ac turpis egestas. Praesent tristique tincidunt dictum. In viverra velit sit amet dui dictum,
+                sed facilisis odio volutpat. Nunc sagittis dignissim varius. Sed elementum suscipit lobortis. Sed aliquet
+                enim molestie, ornare risus tempus, varius nunc. Donec tempus iaculis velit vel pellentesque. Proin ac commodo
+                enim. Vestibulum nec consequat nunc.</p>
+                <div class="float-right"><strong>float: right;</strong></div>
+            <p>Maecenas et consectetur leo. Donec et rutrum ipsum, sed lacinia nisi. Nulla aliquam eu leo dictum tempor. Nullam
+                in augue at nulla consectetur pulvinar. Phasellus cursus nunc ac ex rhoncus lobortis. In convallis, ante
+                at fringilla sagittis, dui risus blandit velit, euismod venenatis elit urna non lectus. Donec tempor urna
+                vitae nulla iaculis, vitae lobortis arcu varius. Praesent pulvinar molestie purus, a suscipit ex rhoncus
+                in. Proin tempus laoreet dui vel blandit. Vivamus metus ipsum, gravida cursus mi eget, vehicula volutpat
+                ante. Morbi fringilla nibh quis turpis dapibus venenatis. Nullam convallis mauris et semper tempor.</p>
+            <p>Ut fringilla dolor vitae est pretium, in ullamcorper orci bibendum. Morbi nec elit feugiat, tempor ex ac, laoreet
+                urna. Cras nec tempus quam, vitae eleifend ex. Nunc ac vestibulum eros. Sed egestas, magna a sagittis convallis,
+                sapien magna condimentum velit, in eleifend sem nunc ut magna. Curabitur non metus dapibus, eleifend elit
+                quis, fringilla metus. In hac habitasse platea dictumst. Nulla a ex id risus tempus facilisis a sed mi.</p>
+            <p>Duis feugiat, lectus quis tempor sollicitudin, ex arcu convallis nulla, eu condimentum tellus ante et mi. Pellentesque
+                ac tincidunt libero, eget vestibulum mi. Vivamus et interdum erat. Quisque velit leo, sollicitudin et vehicula
+                in, convallis nec nulla. Vivamus vel eros libero. Proin et blandit ante. Nunc viverra iaculis elementum.</p>
+            <p>Cras est lacus, sodales fringilla sollicitudin sit amet, ultricies a ligula. Vestibulum fringilla turpis justo,
+                non feugiat massa interdum nec. Proin vestibulum nisi eget pellentesque dictum. Vestibulum ante ipsum primis
+                in faucibus orci luctus et ultrices posuere cubilia Curae; Cras euismod eleifend enim a dictum. Cras sodales
+                nunc sed sapien vehicula, eget scelerisque nunc consequat. Suspendisse neque metus, imperdiet et eros nec,
+                vestibulum scelerisque dolor.</p>
+        </div>
+    </main>
+</body>
+
+</html>

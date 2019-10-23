@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning</title>
+    <!-- <link rel="stylesheet" href="mystyles.css"> -->
+    <style>
+        /* body {
+            font-family: 'Courier New', Courier, monospace;
+            height: 100%;
+            width: 100%;
+
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .static {
+            position: static;
+            top: 400px;
+            left: 400px;
+            /* margin-top: 300px;
+            margin-left: 400px; 
+            z-index: 10; 
+        }*/
+
+        /* .static>.absolute.small {
+            width: 200px;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 40px;
+            font-weight: bold;
+            background: #fff;
+            z-index: 1; */
+
+            /* margin: 10px; */
+        }
+
+        /* .absolute {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            background: #fff;
+            border-color: red;
+        }
+
+        .absolute.small {
+            height: 30px;
+            width: 30px;
+            top: initial;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+            border-color: red;
+            font-size: 12px;
+        }
+
+        .fixed {
+            position: fixed;
+            height: 300px;
+            width: 200px;
+            bottom: 0;
+            right: 0;
+            background-color: green;
+        } */
+
+        /* for fixed увеличава височината на страницата за да демонстрираме fixed */
+
+        .for-fixed {
+            height: 1500px;
+            width: 100%;
+            border-color: green;
+        }
+
+        .for-sticky {
+            height: 500px;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            height: 50px;
+            width: 100%;
+            background-color: orange;
+
+        } 
+        /* * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            border: 1px solid green;
+            display: inline-block;
+            position: relative;
+        }
+
+        div {
+            display: inline-block;
+            vertical-align: top;
+            height: 100px;
+            width: 100px;
+            border: 1px solid blue;
+        }
+        .big {
+            height: 200px;
+            width: 200px;
+            background-color: orange;
+        }
+
+        .first-block {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: aqua;
+        }
+
+        .absolute {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: cadetblue;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <section>
+        <div class="first-block">block 1</div>
+        <div class="big">big block 2</div>
+        <div class="absolute">block 3</div>
+        <div class="fixed">block 4</div>
+    </section> -->
+
+    <!-- <section>
+        <div>static</div>
+        <div>static</div>
+        <div class="relative">relative</div>
+        <div class="absolute">absolute</div>
+        <div>static</div>
+    </section> -->
+
+
+
+
+    <!-- STATIC POSITIONING STARTS-->
+
+    <!-- <div class="static">
+        <span>position:static</span>
+    </div>
+    <div class="static">
+        <span>position:static</span>
+    </div>
+    <div class="static">
+        <span>position:static</span>
+    </div>
+    <div class="static">
+        <span>position:static</span>
+    </div> -->
+
+    <!-- STATIC POSITIONING ENDS-->
+
+
+
+    <!-- RELATIVE POSITIONING STARTS-->
+
+
+    <!-- <div class="static">position: static</div>
+    <div class="relative">position: relative
+        <div class="inner-relative">
+            inner div
+        </div>
+    </div>
+    <div class="static">position: static</div>
+    <div class="static">position: static</div> -->
+
+    <!-- RELATIVE POSITIONING ENDS-->
+
+
+    <!-- ABSOLUTE POSITIONING STARTS-->
+
+    <!-- <section>
+        <div class="static">position: static</div>
+        <div class="absolute">
+            <div class="inner-absolute">
+                inner abs
+            </div>
+        </div>
+        <div class="static">position: static</div>
+        <div class="static">
+            <div class="inner-absolute">
+                inner abs
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <div class="static">position static + abs
+        <div class="absolute small">abs. pos. !!!nb LOOK AT BOTTOM</div>
+    </div>
+
+    <div class="relative">position relative + abs
+        <div class="absolute small">abs. pos.</div>
+    </div> -->
+
+    <!-- ABSOLUTE POSITIONING ENDS-->
+
+
+    <!-- FIXED POSITIONING STARTS-->
+
+    <!-- <div class="for-fixed"></div>
+    <div class="fixed">position:fixed</div> -->
+
+    <!-- FIXED POSITIONING ENDS-->
+
+    <div class="static for-sticky">position: static</div>
+    <div class="sticky">position: sticky
+        <div class="absolute small">abs. pos.</div>
+    </div>
+    <div class="static for-sticky">position: static</div>
+    <div class="static for-sticky">position: static</div>
+    <div class="static for-sticky">position: static</div>
+
+
+
+</body>
+
+</html>

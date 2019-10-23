@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta htt
+    p-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+        }
+        span {
+            border: 1px solid red;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="inline-block">block 1</div>
+    <div class="inline-block relative">block 2</div>
+    <div class="fixed">block  3 is FIXED</div>
+    <span>Lorem ipsum dolor sit amet Element 4 is ABSOLUTE</span>
+</body>
+
+</html>
