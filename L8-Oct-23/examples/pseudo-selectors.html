@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Selectors</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ul li {
+            font-size: 16px;
+
+        }
+
+        ul li ul li {
+            font-size: 14px
+        }
+
+        form > * {
+            display: block;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: transparent;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            vertical-align: middle;
+            transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            width: 170px;
+            height: 50px;
+            line-height: 40px;
+            border-radius: 30px;
+            border: 3px solid #1ECD97;
+            background-color: transparent;
+            text-align: center;
+            color: #1ECD97;
+            
+            font-size: 20px;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 1px 1px 1px #000;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #A2EAD4;
+            color: #fff;
+        }
+
+        button[type="reset"] {
+            height: 50px;
+            width: 50px;
+            line-height: 40px;
+            padding: 0;
+            border-radius: 50%;
+            border: 3px solid brown;
+            color: brown;
+        }
+
+         button[type="reset"]:hover {
+             color: #fff;
+             background-color: brown;
+             border-color:rgba(255, 255, 255, 0.4);
+         }
+
+        button:hover {
+            opacity: 1;
+        }
+
+
+        input:required {
+            border-color: blue;
+        } 
+
+        input:required:invalid {
+            color: red;
+        }
+
+        input:required:valid {
+            color: green;
+            border-color: green;
+        }   
+
+        li:first-child a{
+            color: red;
+        }
+
+        a:last-child {
+            color: green;
+        } 
+
+        [type="checkbox"]:checked {
+            box-shadow: inset 0px 0px 1px 1px green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="email" name="" id="" required>
+        <label for="checkbox">checked
+            <input type="checkbox" name="" id="checkbox">
+        </label>
+        <button type="submit">Изпрати</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <a href="/">Примерен линк</a>
+
+
+    <ul>
+        <li>Лист първо ниво
+            <ul>
+                <li>Лист второ ниво
+                </li>
+                <li>Лист второ ниво
+                    <a href="">Линк на лист от второ ниво</a>
+                    <p>Параграф на лист от второ ниво</p>
+                    <p>Параграф на лист от второ ниво</p>
+                    <p>Параграф на лист от второ ниво</p>
+                    <a href="">Линк на лист от второ ниво</a>
+                    <a href="">Линк на лист от второ ниво</a>
+                    <a href="">Линк на лист от второ ниво</a>
+                </li>
+                <li>Лист второ ниво
+                    <p>Параграф на лист от второ ниво'
+                        <a href="">Линк в параграф</a>
+                    </p>
+                </li>
+            </ul>
+        </li>
+        <li>Лист първо ниво
+            <p>Параграф на лист от първо ниво</p>
+            <p>Параграф на лист от първо ниво</p>
+        </li>
+        <li>Лист първо ниво
+            <p>Параграф на лист от първо ниво</p>
+            <a href="">Линк на лист от първо ниво</a>
+        </li>
+        <li>Лист първо ниво
+            <a href="">Линк на лист от първо ниво</a>
+        </li>
+        <li>Лист първо ниво
+            <p>Параграф на лист от първо ниво
+                <a href="">Линк в параграф</a>
+
+            </p>
+        </li>
+    </ul>
+</body>
+
+</html>

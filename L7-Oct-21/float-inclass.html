@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float in class</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            border: 1px solid black
+        }
+
+        .float-left {
+            float: left;
+            border: 1px solid orange;
+            height: 100px;
+            width: 20%
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        .clearfix::after {
+            clear: both;
+            display: table;
+            content: ''
+        }
+
+        img {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="clearfix">
+        <img src="chrome.png" alt="" class="float-right">
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
+    </section>
+    <!-- <section class="clearfix">
+        <div class="float-left">
+            float left 1
+        </div>
+        <div class="float-left">
+            float left 2
+        </div>
+        <div class="float-right">
+            float right 1
+        </div>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem     </p>
+        <div class="float-right">
+            float right 2
+        </div>
+        <div class="float-right">
+                float right 3
+            </div>
+    </section> -->
+
+
+</body>
+
+</html>

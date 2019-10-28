@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="flex-basis=device-flex-basis, initial-scale=1.0" />
+    <title>CSS Flex</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .small {
+        height: 50px;
+        flex-basis: 50px;
+        background-color: greenyellow;
+      }
+
+      .medium {
+        height: 75px;
+        flex-basis: 100px;
+        background-color: orange;
+
+        border: 1px dashed #333;
+      }
+
+      .big {
+        height: 100px;
+        flex-basis: 200px;
+        background-color: palevioletred;
+      }
+
+      .flex-container {
+        display: flex;
+        display: inline-flex;
+        border: 1px dashed gray;
+        margin: 20px;
+
+        width: 450px;
+      }
+
+      .flex-container > *{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="flex-container">
+      <div class="medium">
+        <span class="number">1</span>
+      </div>
+      <div class="small">
+        <span class="number">2</span>
+      </div>
+      <div class="medium">
+        <span class="number">2</span>
+      </div>
+      <div class="medium">
+        <span class="number">3</span>
+      </div>
+      <div class="big">
+        <span class="number">4</span>
+      </div>
+      <div class="small">
+        <span class="number">5</span>
+      </div>
+    </section>
+  </body>
+</html>
