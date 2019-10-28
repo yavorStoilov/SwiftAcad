@@ -22,7 +22,18 @@
         padding: 20px;
         margin: 20px;
         border: 1px dashed tomato;
+        overflow: hidden;
+
       }
+ /* margine collapce- if one element has margine bottom
+  and next one has margine bottom only the bigger one is displayed (not combined)*/
+      /* .first-section {
+        margin-bottom: 30px;
+      }
+
+      .second-section{
+        margin-top: 60px;
+      } */
 
       section + section {
         margin-top: 10px;
@@ -40,7 +51,7 @@
         commodo consequat.
       </p>
     </section>
-    <!-- <section style="overflow:scroll">
+    <section style="overflow:scroll">
       <h2>overflow: <strong>scroll</strong></h2>
       <h3>always show scrollbars</h3>
       <p>
@@ -49,8 +60,8 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-    </section> -->
-    <!-- <section style="overflow:hidden">
+    </section>
+    <section style="overflow:hidden">
       <h2>overflow: <strong>hidden</strong></h2>
       <h3>no scrollbars are provided</h3>
       <p>
@@ -59,7 +70,7 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat. 
       </p>
-    </section> -->
+    </section>
     <!-- <section style="overflow:auto">
       <h2>overflow: <strong>auto</strong></h2>
       <h3>append scrollbars if necessary</h3>
