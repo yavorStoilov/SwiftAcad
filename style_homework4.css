@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section-wrap {
+    display: flex;
+    justify-content: center;
+}
+.header {
+    background-color: #292525;
+    color: grey;
+}
+
+.content {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+}
+.column{
+    flex-direction: column;
+}
+
+.header-content, .footer-content {
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;    
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: black;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    align-items: flex-start;
+
+}
+.navigation-link {
+    display: flex;
+    color: gray;
+    flex-shrink: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navigation-link:hover {
+    color: red;
+}
+
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.image {
+    border: 1px solid black;
+    height: 315px;
+    width: 215px;
+    flex-shrink: 0;
+    background-color: #292525;
+}
+
+.text {
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: grey;
+    border-bottom: 1px solid gray;
+
+}
+
+.section-image {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    align-items: flex-start;
+
+}
+
+.image-section{
+    display: flex;
+    border: 1px solid black;
+    height: 150px;
+    width: 180px;
+    flex-shrink: 0;
+    background-color: #292525;
+    margin-bottom: 10px;
+}
+.image-description {
+    width: 400px;
+    padding-left: 10px;
+    flex-shrink: 0;
+    color: grey;
+
+}
+
+.section {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.under-section {
+    display: flex;
+}
+.link {
+    color: orange;
+}
+
+
+.section-categories {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: flex-start;
+    padding-left: 10px;
+    color: grey;
+}
+
+.categories {
+    padding: 5px;
+    border-bottom: 1px dashed gray;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    background-color: #292525;
+    color: grey;
+}
+
+
+
