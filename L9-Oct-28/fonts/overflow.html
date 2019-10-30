@@ -22,15 +22,25 @@
         padding: 20px;
         margin: 20px;
         border: 1px dashed tomato;
+        overflow:hidden;
       }
 
       section + section {
         margin-top: 10px;
       }
+
+      .first-section {
+        margin-bottom: 30px;
+      }
+
+      .second-section {
+      margin-top: 60px;
+      }
+
     </style>
   </head>
   <body>
-    <section>
+    <section class="first-section">
       <h2>overflow: <strong>visible</strong></h2>
       <h3>content is not clipped</h3>
       <p>
@@ -74,5 +84,15 @@
                   mollit anim id est laborum.
                 </p> 
     </section> -->
+    <section class="second-section" style="overflow:scroll; overflow-y:scroll" overflow-x: scroll>
+      <h2>overflow: <strong>visible</strong></h2>
+      <h3>content is not clipped</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </section>
   </body>
 </html>
