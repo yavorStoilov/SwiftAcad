@@ -27,20 +27,28 @@
       section + section {
         margin-top: 10px;
       }
+      .first-secrion{/* kogato imam preplitane sys razmerite se naricha collapse*/
+        margin-bottom:60px;
+      }
+      .second-section{
+        margin-top:30px;
+      }
     </style>
   </head>
   <body>
-    <section>
+    <section class="first-section">
       <h2>overflow: <strong>visible</strong></h2>
       <h3>content is not clipped</h3>
-      <p>
+    
+     <!--- <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
-      </p>
+      </p>-->
     </section>
-    <!-- <section style="overflow:scroll">
+    <section class="second-section">
+     <section style="overflow:scroll"; overflow:>
       <h2>overflow: <strong>scroll</strong></h2>
       <h3>always show scrollbars</h3>
       <p>
@@ -60,7 +68,7 @@
         commodo consequat. 
       </p>
     </section> -->
-    <!-- <section style="overflow:auto">
+     <section style="overflow:auto">
       <h2>overflow: <strong>auto</strong></h2>
       <h3>append scrollbars if necessary</h3>
       <p>Lorem ipsum dolor</p>
