@@ -20,17 +20,26 @@
         height: 100px;
         max-width: 300px;
         padding: 20px;
-        margin: 20px;
         border: 1px dashed tomato;
+        overflow: hidden;
       }
 
-      section + section {
+      
+      /* section + section {
         margin-top: 10px;
+      } */
+/* margin collapse - ако един елемент има margin-bottom а друг, под него, margin-top
+стойностите им не се сумират а се прилага по-големия */
+      .first-section {
+        margin-bottom: 30px;
+      }
+      .second-section {
+        margin-top: 60px;
       }
     </style>
   </head>
   <body>
-    <section>
+    <section class="first-section"></section>
       <h2>overflow: <strong>visible</strong></h2>
       <h3>content is not clipped</h3>
       <p>
@@ -40,7 +49,7 @@
         commodo consequat.
       </p>
     </section>
-    <!-- <section style="overflow:scroll">
+    <section class="second-section" style="overflow:scroll; overflow-y:scroll; overflow-x: scroll">
       <h2>overflow: <strong>scroll</strong></h2>
       <h3>always show scrollbars</h3>
       <p>
@@ -49,8 +58,9 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-    </section> -->
-    <!-- <section style="overflow:hidden">
+    </section>
+    <p></p>
+    <section style="overflow:hidden">
       <h2>overflow: <strong>hidden</strong></h2>
       <h3>no scrollbars are provided</h3>
       <p>
@@ -59,7 +69,7 @@
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat. 
       </p>
-    </section> -->
+    </section>
     <!-- <section style="overflow:auto">
       <h2>overflow: <strong>auto</strong></h2>
       <h3>append scrollbars if necessary</h3>
