@@ -20,7 +20,6 @@
         height: 100px;
         max-width: 300px;
         padding: 20px;
-        margin: 20px;
         border: 1px dashed tomato;
         overflow: hidden;
 
@@ -37,11 +36,19 @@
 
       section + section {
         margin-top: 10px;
+      } */
+/* margin collapse - ако един елемент има margin-bottom а друг, под него, margin-top
+стойностите им не се сумират а се прилага по-големия */
+      .first-section {
+        margin-bottom: 30px;
+      }
+      .second-section {
+        margin-top: 60px;
       }
     </style>
   </head>
   <body>
-    <section>
+    <section class="first-section"></section>
       <h2>overflow: <strong>visible</strong></h2>
       <h3>content is not clipped</h3>
       <p>
@@ -68,7 +75,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. 
+        commodo consequat.
       </p>
     </section>
     <!-- <section style="overflow:auto">
@@ -83,7 +90,7 @@
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
-                </p> 
+                </p>
     </section> -->
   </body>
 </html>
