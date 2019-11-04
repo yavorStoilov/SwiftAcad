@@ -1,7 +1,7 @@
-/* body {
+body {
     perspective-origin: unset;
     perspective: 400px;
-} */
+}
 
 /*rotateX*/
 
@@ -23,9 +23,9 @@
 
 /* rotate3d*/
 
-/* img:hover {
+img:hover {
     transform: rotate3d(0, 1, 0, 30deg)
-} */
+}
 
 /*scale3d*/
 
