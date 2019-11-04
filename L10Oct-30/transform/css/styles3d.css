@@ -5,30 +5,35 @@
 
 /*rotateX*/
 
-/* img:hover {
+body {
+    perspective-origin: uset;
+    perspective: ;
+}
+
+img:hover {
     transform: rotateX(25deg)
 } */
 
-/*rotateY*/
+rotateY
 
-/* img:hover {
+img:hover {
     transform: rotateY(60deg)
-} */
+}
 
-/*translate3d*/
+translate3d
 
-/* img:hover {
+img:hover {
     transform: translate3d(20px, 20px, 130px)
-} */
+}
 
-/* rotate3d*/
+rotate3d
 
-/* img:hover {
+img:hover {
     transform: rotate3d(0, 1, 0, 30deg)
-} */
+}
 
-/*scale3d*/
+scale3d
 
-/* img:hover{
+img:hover{
     transform: scale3d(1, 1, 1.5) rotate3d(1, 0, 0, 25deg);
-} */
+}
