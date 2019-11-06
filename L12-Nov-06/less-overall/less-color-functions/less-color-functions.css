@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+.swatch {
+  background: tomato;
+  display: block;
+  float: left;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin: 30px;
+  border: solid 4px #fff;
+  -webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  font-family: courier;
+}
+.start-color {
+  width: 1000px;
+  float: none;
+}
+.darken {
+  background: #ff3814;
+}
+.lighten {
+  background: #ff8e7a;
+}
+.saturate {
+  background: #ff6347;
+}
+.desaturate {
+  background: #d18375;
+}
+.darken-saturate {
+  background: #ff3814;
+}
+.lighten-saturate {
+  background: #ff8e7a;
+}
+.darken-desaturate {
+  background: #c4614f;
+}
+.lighten-desaturate {
+  background: #dea59b;
+}
