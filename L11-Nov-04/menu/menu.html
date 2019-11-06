@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .inline-block-middle {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .flex-container-centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .first-level-nav {
+            display: flex;
+        }
+
+        .first-level-nav>li {
+            position: relative;
+            background-color: orange;
+            border: 1px solid green;
+        }
+
+        .first-level-nav>li:hover .second-level-nav {
+            display: block;
+        }
+
+
+
+        .second-level-nav li a {
+
+            padding: 5px 10px;
+            border: 1px solid red;
+            white-space: pre;
+        }
+
+        .second-level-nav {
+            display: none;
+            position: absolute;
+
+            border-radius: 15px 15px 0 0;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .first-level-nav li a {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 20px 20px 20px 10px;
+            /* padding-left: 10px  грешно*/
+        }
+
+        .first-level-nav>li a:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 40px;
+            width: 40px;
+            background-color: black;
+            margin-left: 20px;
+            background-image: url(icon-sprite.png);
+            background-color: red;
+            background-position: -18px -27px;
+        }
+
+        .first-level-nav>li:hover a:before {
+            background-position: -18px 97px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="first-level-nav">
+            <li class="flex-container-centered">
+                <a href=""><span class="text">home</span> </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="text inline-block-middle">photos</span>
+                </a>
+
+                <!-- <ul class="second-level-nav">
+                    <li>
+                        <a href="">very long photo name</a>
+                    </li>
+                    <li>
+                        <a href="">short</a>
+                    </li>
+                    <li>
+                        <a href="">even longer photo name name name</a>
+                    </li>
+                </ul>             -->
+            </li>
+            <li>
+                <a href="">Maps</a>
+                <!-- <ul class="second-level-nav">
+                        <li>
+                            <a href="">very long photo name</a>
+                        </li>
+                        <li>
+                            <a href="">short</a>
+                        </li>
+         
+                    </ul>    -->
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
