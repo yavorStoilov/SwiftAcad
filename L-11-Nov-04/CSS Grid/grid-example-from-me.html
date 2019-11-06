@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 100px 1fr 100px;
+            justify-content: center;;
+           
+        }
+
+        header,footer {
+            display: grid;
+            background-color: red;
+            grid-column: 1/4;
+
+        }
+
+        main {
+            background-color: yellow;
+            grid-column: 2/3;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 200px 100px 300px;
+        }
+
+        .pictures {
+            grid-column: 1/-1;
+            border: 2px solid black;
+        }
+
+        .text {
+            grid-column: 1/-1;
+            border: 2px solid black;
+        }
+
+        .pictures-text {
+            border: 2px solid black;
+        }
+        aside{
+            border:2px solid black;
+        }
+        .logo{
+            justify-self: center;
+            align-self: center;
+
+        }
+    </style>
+</head>
+
+<body class="grid-container">
+    <header>
+      <div class="logo">Lorem ipsum dolor sit amet</div>
+    </header>
+    <main>
+        <section class="pictures"></section>
+        <section class="text"></section>
+        <section class="pictures-text">
+        </section>
+        <aside>
+
+        </aside>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
