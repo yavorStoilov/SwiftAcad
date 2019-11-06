@@ -1,0 +1,40 @@
+// Start Color
+@start-color:                   tomato;
+
+@lighten-percentage:           10%;
+@darken-percentage:            10%;
+@saturate-percentage:          15%;
+@desaturate-percentage:        50%;
+
+
+body {margin:0;}
+
+.swatch {
+  background: @start-color;
+  display: block;
+  float:left;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin: 30px;
+  border: solid 4px #fff;
+  box-shadow: 0 0 9px rgba(0,0,0,.4);
+  color: #fff;
+  text-align: center;
+  font-family: courier;
+}
+
+.start-color {
+  width:1000px; 
+  float:none;
+}
+
+.darken {background: darken(@start-color, @darken-percentage)}
+.lighten {background: lighten(@start-color, @lighten-percentage)}
+.saturate {background: saturate(@start-color, @saturate-percentage)}
+.desaturate {background: desaturate(@start-color, @desaturate-percentage)}
+
+.darken-saturate {background: darken(saturate(@start-color, @saturate-percentage), @darken-percentage)}
+.lighten-saturate {background: lighten(saturate(@start-color, @saturate-percentage), @lighten-percentage)}
+.darken-desaturate {background: darken(desaturate(@start-color, @desaturate-percentage), @darken-percentage)}
+.lighten-desaturate {background: lighten(desaturate(@start-color, @desaturate-percentage), @lighten-percentage)}
