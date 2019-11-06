@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        button {
+            width: 250px;
+            height: 150px;
+            font-size: 70px;
+            background-color: darkblue;
+            color: red;
+            transition-property: all;
+            transition-delay: 0.05s;
+            transition-duration: 0.20s;
+            transition-timing-function: ease-in-out;
+        }
+    
+        button:hover {
+            background-color: red;
+            color: darkblue;
+            transform: rotate(360deg);
+        }
+
+        button:active {
+            transform: translate(3px, 3px);
+            transform: scale(1.2);
+        }
+
+        /* div {
+            width: 1000px;
+            height: 1000px;
+            background-color: grey;
+            opacity: 1%;
+        } */
+
+    </style>
+
+</head>
+<body>
+    <!-- <div></div> -->
+    <button>Click</button>
+</body>
+</html>

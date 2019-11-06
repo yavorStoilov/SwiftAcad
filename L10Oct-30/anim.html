@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .animation {
+            position: relative;
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            animation-name: inclass-2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes inclass {
+            from {top: 0; left: 0; transform: rotate(0deg);}
+            to {top: 0; left: calc(100% - 30px); transform: rotate(360deg)}
+        }
+
+        @keyframes inclass-2{
+            0% {left: 0; top: 0; transform: rotate(180deg)}
+            25% {top: 0; left: calc(100% - 30px); transform: rotate(45deg)}
+            50% {left: calc(100% - 30px); top: calc(100% - 30px); transform: rotate(90deg)} 
+            100% {left: 0; top: calc(100% - 30px); transform: rotate(180deg)}
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>
