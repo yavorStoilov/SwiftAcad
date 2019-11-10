@@ -1,0 +1,132 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*UTILS*/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container.column {
+    flex-direction: column;
+}
+
+/*MAIN STYLES*/
+
+.logo-holder a{
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-image: url(../images/chrome.jpg);
+    /* background-image: url(../images/chrome.png);
+    background-image: url(../images/chrome.svg);
+    background-size: contain; 
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.menu-first-level {
+    position: relative;
+    
+    transition: all 0.15s linear;
+    border: 1px solid #333;
+    color: #333;
+}
+
+.menu-first-level:hover {
+    background-color: azure;
+}
+
+.menu-first-level a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    color: inherit;
+}
+
+.menu-first-level span {
+    vertical-align: middle;
+}
+
+
+.menu-second-level {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.menu-second-level a{
+   border: 1px solid #333;
+   width: 100%;
+}
+
+.menu-first-level:hover .menu-second-level {
+    display: flex;
+}
+/*ICON SPRITE STARTS*/
+
+.icon:before {
+    content: '';
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../images/icon-sprite.jpg)
+}
+
+.icon-windows:before {
+    background-position: -647px -396px;
+}
+
+.menu-first-level:hover .icon-windows:before {
+    background-position: -215px -396px;
+}
+
+.icon-apple:before {
+    background-position: -576px 0;
+}
+
+.menu-first-level:hover .icon-apple:before {
+    background-position: -144px 0;
+}
+/*ICON SPRITE ENDS*/
+
+/*INLINE SVG STARTS*/
+.inline-svg svg,
+.inline-svg span {
+    vertical-align: middle;
+}
+
+.inline-svg:hover {
+    background-color: azure;
+}
+
+.inline-svg:hover svg {
+    fill:  royalblue;
+}
+
+
+.inline-svg:hover a {
+    color:royalblue;
+}
+/*INLINE SVG ENDS*/
+
+/*ICONFONT START*/

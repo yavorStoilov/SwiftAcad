@@ -23,11 +23,12 @@
             height: 100px;
             width: 100px;
             background-color: #333;
-            animation-name: shakeit;
-            animation-duration: 3s;
+            /* animation-name: move-adv; */
+            animation-duration: 5s;
             animation-iteration-count: infinite;
-            animation-delay: 2s;
-            margin: 0 auto;
+            /* animation-delay: 2s; */
+            /* margin: 0 auto; */
+            transition: all 0.15s;
         }
             /* Standard syntax */
             @keyframes shakeit {
@@ -79,12 +80,37 @@
             75% {left: 75%; top: 25%;}
             100% {left: calc(100% - 155px); top: 0;}
         }
+
+        .animation {
+            height: 30px;
+            width: 30px;
+            background-color: tomato;
+            animation-name: inclass-2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes inclass {
+            from { top: 0; left: 0; transform:rotate(0deg)}
+            to { top: 0; left: calc(100% - 30px); transform:rotate(360deg)}
+        }
+
+        @keyframes inclass-2{
+            0% {left: 0; top: 0; transform:rotate(180deg)}
+            25% {top: 0; left: calc(100% - 30px); transform:rotate(45deg)}
+            50% {left: calc(100% - 30px); top: calc(100% - 30px); transform:rotate(90deg) }
+            100% {left: 0; top: calc(100% - 30px); transform:rotate(180deg)}
+        }
     </style>
 </head>
 <body>
-    <!-- <div></div> -->
+     <!-- <div></div>
     <section>
-        <img src="images/turtle.png"  alt="">
-    </section>
+        <img src="images/turtle.png"  alt=""> 
+    </section>  -->
+
+    <div class="animation">
+    </div>
 </body>
 </html>
