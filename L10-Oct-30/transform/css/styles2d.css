@@ -4,8 +4,13 @@
     -webkit-transform: translate(200px, 50px);
     -moz-transform: translate(200px, 50px);
     -ms-transform: translate(200px, 50px);
+<<<<<<< HEAD:L10-Oct-30/transform/css/styles2d.css
     transform: translate(-50px, -50px); 
 }  */
+=======
+    transform: translate(50px, 50px); 
+} */
+>>>>>>> master:L10-Oct-30/transform/css/styles2d.css
 
 /*ROTATE*/
 /* 
@@ -27,12 +32,20 @@ img:hover {
 
 /*SКEW общо*/
 
+<<<<<<< HEAD:L10-Oct-30/transform/css/styles2d.css
  /* img:hover {
+=======
+img:hover {
+>>>>>>> master:L10-Oct-30/transform/css/styles2d.css
     -webkit-transform: skew(-40deg, 15deg);  
        -moz-transform: skew(-40deg, 15deg);  
         -ms-transform: skew(-40deg, 15deg); 
             transform: skew(-40deg, 15deg);    
+<<<<<<< HEAD:L10-Oct-30/transform/css/styles2d.css
 }  */
+=======
+}
+>>>>>>> master:L10-Oct-30/transform/css/styles2d.css
 
 /*SКEW X*/
 
