@@ -1,8 +1,9 @@
 function compare (a, b) {
-    for(var i = 0; i<b.lenght; i++) {
-        if a[i].includes(b[i]){
-            
-        }
+    if (animals.indexOf(a) < 0 && animals.indexOf(b) >= 0) {
+        return 1;
+    }
+    if (animals.indexOf(a) >= 0 && animals.indexOf(b) < 0) {
+        return -1;
     }
 }
 
