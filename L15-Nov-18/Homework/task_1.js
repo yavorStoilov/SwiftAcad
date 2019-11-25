@@ -10,6 +10,13 @@ function sum (array){
 	return sumAll;
 }
 
+function sumForForEach(arr){
+	var result = 0;
+	arr.forEach(function(el){
+		result+==el;
+	});
+	return result;
+}
 function sumEven (array){
 	var sumAll;
 	sumAll=0;
