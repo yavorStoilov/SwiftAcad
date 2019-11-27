@@ -2,12 +2,11 @@
 var arrayWords = ['ih','yas','esaelP'];
 
 function reverseArr(arr){
-	var reverseArray = [];
    arr.reverse();
    for(var i=0 ; i<arr.length ; i++){
-	   var revEl = arr[i].split("").reverse().join("");
-	   reverseArray.push(revEl);
+	   arr[i] = arr[i].split("").reverse().join("");
+	   
    }
-   return reverseArray.join(" ");
+   return arr.join(" ");
 }
 reverseArr(arrayWords);
