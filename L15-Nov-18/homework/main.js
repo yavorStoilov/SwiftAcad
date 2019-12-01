@@ -34,7 +34,7 @@ function sumOdd(array) {
 }
 // Task 2
 
-var array = ['dog', 'cat', 'mouse', 'lizard', 'bird'];
+var array2 = ['dog', 'cat', 'mouse', 'lizard', 'bird'];
 //		first(array)     => 'dog'
 //      first(array, 3)  => ['dog', 'cat', 'mouse']
         
