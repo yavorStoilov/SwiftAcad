@@ -20,3 +20,14 @@ function func_2 (arr){
 	});
 	return arr ;
 }
+
+// reshenie3 
+var arr = [4,9,7,2,1,8];
+function randomfunction (arr){
+	return arr.map(function(el){
+		if (el % 2 != 0){
+			return el*2;
+		}else 
+			return el ;
+	});
+}
