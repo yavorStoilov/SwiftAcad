@@ -1,0 +1,22 @@
+div {
+  width: 25vw;
+  margin: 2vw;
+  float: left;
+  height: 150px;
+  overflow: auto;
+  padding: 1em;
+  border: 2px solid purple;
+  border-radius: 5px;
+}
+
+.green {
+  background-color: "lightgreen";
+}
+
+.yellow {
+  background-color: "lightyellow";
+}
+
+.red {
+  background-color: "coral";
+}
