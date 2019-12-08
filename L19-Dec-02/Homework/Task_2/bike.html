@@ -1,12 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <title>  
+            Print the content of object using JavaScript 
+        </title> 
+    </head>  
+      
+    <body style = "text-align:center;" id = "body">  
+      
+        <h1 style = "color:green;" >  
+            GeeksForGeeks  
+        </h1> 
+      
+        <p> 
+            Print JavaScript Object. 
+        </p> 
+          
+        <button onclick = "gfg_Run()">  
+            print object 
+        </button> 
+          
+        <p id = "GFG_DOWN" style 
+               = "color:green; font-size: 20px; font-weight: bold;"> 
+        </p> 
+          
+        <script> 
+            var el_down = document.getElementById("GFG_DOWN"); 
+            
+              class GFG_object {
+    constructor (brand, price, color, weight, bikeStyle){
+      this.brand = brand;
+      this.price = price;
+      this.color = color;
+      this.weight = weight;
+      this.bikeStyle = bikeStyle;
+      
+    }
+}
+              
+            var printObj = function(obj) { 
+                var string = ''; 
+  
+                for(var prop in obj) { 
+                    if(typeof obj[prop] == 'string') { 
+                        string+= prop + ': ' + obj[prop]+'; </br>'; 
+                    } 
+                    else { 
+                        string+= prop + ': { </br>' + print(obj[prop]) + '}'; 
+                    } 
+                } 
+  
+                return string; 
+            } 
+            function gfg_Run() {  
+                el_down.innerHTML = printObj(GFG_object); 
+            } 
+        </script>  
+    </body>  
+</html> 
