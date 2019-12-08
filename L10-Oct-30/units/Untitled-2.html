@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of CSS3 Transition</title>
+<style type="text/css">
+    button {
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font: bold 18px sans-serif;
+        background: #fd7c2a;
+        transition-timing-function: linear; 
+        transition-duration: 0.2s; 
+    }
+    button:hover {
+        background: #41f084;
+       
+        transition-duration: 1s;
+    }
+    button:active{
+        transform: translate(2px, 2px)
+     rotate(360deg)
+     scale(3)
+    }
+</style>
+</head>
+<body>
+	<button type="button">Click me</button>
+</body>
+</html>  

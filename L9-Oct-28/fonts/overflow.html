@@ -22,8 +22,15 @@
         padding: 20px;
         border: 1px dashed tomato;
         overflow: hidden;
+
+      }
+ /* margine collapce- if one element has margine bottom
+  and next one has margine bottom only the bigger one is displayed (not combined)*/
+      /* .first-section {
+        margin-bottom: 30px;
       }
 
+<<<<<<< HEAD
       .firstChild {
         margin-bottom: 30px;
       }
@@ -31,6 +38,13 @@
       .secondChild {
       
       /* section + section {
+=======
+      .second-section{
+        margin-top: 60px;
+      } */
+
+      section + section {
+>>>>>>> master
         margin-top: 10px;
       } */
 /* margin collapse - ако един елемент има margin-bottom а друг, под него, margin-top
@@ -64,7 +78,7 @@
     </section> -->
     <section class="firstChild" style="overflow-x:scroll">
     </section>
-    <section class="second-section" style="overflow:scroll; overflow-y:scroll; overflow-x: scroll">
+    <section style="overflow:scroll">
       <h2>overflow: <strong>scroll</strong></h2>
       <h3>always show scrollbars</h3>
       <p>
@@ -74,8 +88,11 @@
         commodo consequat.
       </p>
     </section>
+<<<<<<< HEAD
     <section class="secondChild" style="overflow:hidden">
     <p></p>
+=======
+>>>>>>> master
     <section style="overflow:hidden">
       <h2>overflow: <strong>hidden</strong></h2>
       <h3>no scrollbars are provided</h3>
@@ -83,7 +100,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. 
+        commodo consequat.
       </p>
     </section>
     <!-- <section style="overflow:auto">
@@ -98,7 +115,7 @@
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                   occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
-                </p> 
+                </p>
     </section> -->
   </body>
 </html>

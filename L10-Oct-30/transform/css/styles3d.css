@@ -3,16 +3,19 @@ body {
     perspective: 400px;
 }
 
-/*rotateX*/
+rotateX
 
+<<<<<<< HEAD
 body {
     perspective-origin: uset;
     perspective: ;
 }
 
+=======
+>>>>>>> master
 img:hover {
     transform: rotateX(25deg)
-} */
+}
 
 rotateY
 
