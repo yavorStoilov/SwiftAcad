@@ -16,3 +16,54 @@
 	Примерен резултат:
 		["banana", "kiwi", "strawberry", "ice"] =>
 		["ice", "kiwi", "banana", "strawberry"]
+
+
+
+
+(function(){
+    "use strict"
+
+    // задача 1:
+
+    function showFirst(){
+        var headingOne = document.createElement("h1");
+        headingOne.textContent = "PAGE DOM LOADED";
+        document.body. appendChild(headingOne);
+    }
+
+    function thenShow() {
+        var headingTwo = document.createElement("h1");
+        headingTwo.textContent = "PAGE BOM LOADED";
+        document.body.appendChild(headingTwo);
+    }
+
+    window.onload = thenShow;
+
+    document.addEventListener("DOMContentLoaded", showFirst);
+    document.addEventListener("window.onload",thenShow);
+
+    function clickPosition(event) {
+        var el = document.createElement("h2");
+        el.innerHTML = "click captured: " + event.pageX + "X, and " + event.pageY + "Y";
+        document.body.appendChild(el);
+          
+      }
+      
+      document.addEventListener("click", clickPosition);
+
+// задача 2:
+
+var fruits = ["banana", "kiwi", "strawberry", "ice"];
+
+function compare(a, b) {
+    if (a.length > b.length) { return 1; }
+    if (a.length < b.length) { return -1; }
+    return 0;
+    }
+
+    var result = document.createElement("h2");
+    result.innerHTML = "това е резултатът от задача 2: " + "[ " + fruits.sort(compare) + " ]" +"."
+    document.body.appendChild(result);
+    // fruits.sort(compare)
+
+})();
