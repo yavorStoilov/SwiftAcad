@@ -1,0 +1,202 @@
+/*Variables*/
+
+@base-scheme-color: black;
+@base-font-size: 15px;
+
+
+@background-color: lighten(@base-scheme-color, 30%);
+@text-color: lighten(@base-scheme-color, 20%);
+@text-color-opposite: lighten(@base-scheme-color, 80%);
+@border-color: lighten(@base-scheme-color, 50%);
+
+@main-content-width: 960px;
+
+/*Resets*/
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: @base-font-size;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utils */
+.inline-block-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.horizontally-centered-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.standart-transition {
+    transition: all 0.15s linear;
+}
+
+/*Styles*/
+
+html, body {
+    width: 100%;
+
+    font-size: @base-font-size;
+    color: @text-color;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr @main-content-width 1fr;
+    grid-template-rows: 85px 1fr 50px;
+    grid-gap: @base-font-size*2 0;
+}
+
+h1 {font-size: @base-font-size*3.5}
+h2 {font-size: @base-font-size*2.5}
+h3 {font-size: @base-font-size*2}
+h4, h5, h6 {font-size: @base-font-size*1.5}
+
+header, footer {
+    grid-column: ~"1/-1";
+
+    background-color: @background-color;
+    color: @text-color-opposite;
+}
+
+nav > ul{
+    .flex-container;
+        
+        a {
+            .inline-block-middle;
+            .standart-transition;
+            background-color: lighten(@base-scheme-color, 15%);
+            font-size: @base-font-size*1.25;
+            color: @text-color-opposite;
+            padding: @base-font-size/2 @base-font-size; 
+            text-transform: uppercase;
+
+            &:hover {
+                color: lighten(@base-scheme-color, 15%);
+                background-color: @text-color-opposite;
+            }
+        }
+
+}
+
+.content-wrap {
+    .horizontally-centered-block;
+    .flex-container;
+    height: 100%;
+    width: @main-content-width;
+}
+
+main {
+    grid-column: ~"2/3";
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        margin-bottom: @base-font-size*2
+    }
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-holder {
+    position: relative;
+    border: 1px solid @border-color;
+    padding: @base-font-size*0.3;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    .image {
+        flex-shrink: 0;
+        position: relative;
+        width: 215px;
+        height: 315px;
+        background-color: @background-color;
+        text-align: center;
+        
+        .standart-transition;
+
+        &:hover .comment {
+            z-index: 1;
+            bottom: 0;
+        }
+    }
+
+    .comment {
+        position: absolute;
+        width: 100%;
+        bottom: -100%;
+        z-index: -1;
+        background-color: @text-color-opposite;
+        padding: @base-font-size*0.5
+    }
+}
+
+.main-description {
+    line-height: @base-font-size*2;
+    font-size: @base-font-size*1.5;
+    text-align: center;
+}
+
+.minor-content {
+    width: 70%;
+
+    article {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: @base-font-size;
+    }
+
+    .img-holder {
+        margin-right: @base-font-size;
+    }
+
+    .image {
+        height: 150px;
+        width: 180px;
+    }
+
+    a {
+        text-align: right;
+    }
+}
+
+aside {
+    width: 30%;
+
+    a {
+        display: block;
+        color: @base-scheme-color
+    }
+}
+
+// .generate-columns(16);
+
+// .generate-columns(@n, @i: 1) when (@i =< @n) {
+//     .column-@{i} {
+//         width: (@i * 100% / @n)
+//     }
+//     .generate-columns(@n, (@i + 1));
+// }
