@@ -1,0 +1,16 @@
+{
+	"bikes": [
+		{
+			"brand": "BMX",
+			"color": "red",
+			"price": 300,
+			"weight": 12
+		},
+		{
+			"brand": "BMX",
+			"color": "red",
+			"price": 300,
+			"weight": 12
+		}
+	]
+}
