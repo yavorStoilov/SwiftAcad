@@ -1,6 +1,5 @@
 (function () {
 	'use strict';
-
 	document.nameForm.nameInput.addEventListener("keyup", showHint);
 
 	function showHint() {
@@ -36,4 +35,4 @@
 	// 	alert("complete");
 	// });
 
-}) ();
+})();

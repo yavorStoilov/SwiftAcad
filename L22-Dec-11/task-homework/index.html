@@ -10,13 +10,15 @@
 <body>
     <form action="" id="nameform">
        <span id="sName"> Username </span><input type="text" id="userName" name="Username">
+       <p id="pName"></p>
         <br>
-      <span id="sPass"> Password </span><input type="text" id="pass" name="Password">
+      <span id="sPass"> Password </span><input type="password" id="pass" name="Password">
+      <p id="pPass"></p>  
+      <br>
+        <input type="checkbox" id="check"> <span id="sCheck">Remember me</span> 
         <br>
-        <input type="checkbox" id="chek"> <span id="sCheck">Remember me</span> 
-        <br>
+        <button type="submit" id="but" form="nameform" value="Submit">Login</button>
     </form>
-    <button type="submit" id="but" form="nameform" value="Submit">Login</button>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
