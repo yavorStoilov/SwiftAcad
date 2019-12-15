@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .form {
+            position: relative;
+            left: 150px;
+            top: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" id="change" value="ChangeWithGreen">
+
+    <form class="form" action="">
+        <label id="labelName" for="username">
+            <span>Username</span>
+            <input type="text" id="username" value="">
+            <h5 id="user-message"></h5>
+        </label>
+        <br>
+        <br>
+
+        <label id="labelPass" for="password">
+            <span>Password</span>
+            <input type="password" id="password" value="">
+            <h5 id="user-pass"></h5>
+        </label>
+        <br>
+        <br>
+        <label id="labelCheck" for="remember">
+            <input type="checkbox" name="" id="remember">
+            <span>Remember me</span>
+        </label>
+        <br>
+        <br>
+        <input type="button" id="login" value="Login">
+
+    </form>
+    <script src="homework-9.js"></script>
+</body>
+
+</html>
