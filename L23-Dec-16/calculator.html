@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="display" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" name="one" value="1" onclick="addNumber('1')"></td>
+                <td><input type="button" class="number" name="two" value="2" onclick="addNumber('2')"></td>
+                <td><input type="button" class="number" name="three" value="3" onclick="addNumber('3')"></td>
+                <td><input type="button" class="operator" name="plus" value="+" onclick="addSymbol('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" name="four" value="4" onclick="addNumber('4')"></td>
+                <td><input type="button" class="number" name="five" value="5" onclick="addNumber('5')"></td>
+                <td><input type="button" class="number" name="six" value="6" onclick="addNumber('6')"></td>
+                <td><input type="button" class="operator" name="minus" value="-" onclick="addSymbol('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="number" name="seven" value="7" onclick="addNumber('7')"></td>
+                <td><input type="button" class="number" name="eight" value="8" onclick="addNumber('8')"></td>
+                <td><input type="button" class="number" name="nine" value="9" onclick="addNumber('9')"></td>
+                <td><input type="button" class="operator" name="times" value="x" onclick="addSymbol('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button"  class="operator" id="clear" name="clear" value="C" onclick="clearResult()"></td>
+                <td><input type="button" class="number" name="zero" value="0" onclick="addNumber('0')"></td>
+                <td><input type="button" class="operator" name="doit" value="=" onclick="getResult()"></td>
+                <td><input type="button" class="operator" name="div" value="/" onclick="addSymbol('/')"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
