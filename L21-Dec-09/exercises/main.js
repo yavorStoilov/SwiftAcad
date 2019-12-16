@@ -13,7 +13,7 @@
     $('.container').css('color', 'green');
 
     if(userName.val().length < 3){
-        alert(3)
+        alert(3);
         userName.css('color, red');
     }
 
