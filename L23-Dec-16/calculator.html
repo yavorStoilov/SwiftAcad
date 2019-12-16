@@ -42,8 +42,25 @@
             </tr>
         </table>
     </form>
-
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script>
+        (function() {
+            var display = $('#display');
+            display.prop( "disabled", false );
+
+            display.val(5);
+
+            $('input:button').click(function() {
+                display = ($(this).val());
+            })
+
+        })();
+    
+    </script>
 
 </body>
 
